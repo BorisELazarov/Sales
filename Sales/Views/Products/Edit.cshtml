@@ -1,0 +1,59 @@
+﻿@model Sales.ViewModels.Products.EditVM;
+@{
+    this.Layout = "/Views/Shared/_Site.cshtml";
+    ViewData["title"] = "Edit Product";
+}
+
+<fieldset>
+    <legend>Edit Product</legend>
+    <form action="/Products/Edit" method="post">
+        <div class="grid">
+            @Html.HiddenFor(m=>m.Id)
+            <div class="row">
+                <div class="col-1">@Html.LabelFor(m=>m.Name)</div>
+                <div class="col-2">
+                    @Html.TextBoxFor(m=>m.Name)
+                </div>
+                <div class="col-2">
+                    @Html.ValidationMessageFor(m=>m.Name)
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">@Html.LabelFor(m=>m.Description)</div>
+                <div class="col-2">
+                    @Html.TextBoxFor(m=>m.Description)
+                </div>
+                <div class="col-2">
+                    @Html.ValidationMessageFor(m=>m.Description)
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">@Html.LabelFor(m=>m.Quantity)</div>
+                <div class="col-2">
+                    @Html.TextBoxFor(m=>m.Quantity)
+                </div>
+                <div class="col-2">
+                    @Html.ValidationMessageFor(m=>m.Quantity)
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">@Html.LabelFor(m=>m.PricePerUnit)</div>
+                <div class="col-2">
+                    @Html.TextBoxFor(m=>m.PricePerUnit)
+                </div>
+                <div class="col-2">
+                    @Html.ValidationMessageFor(m=>m.PricePerUnit)
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-2">
+                    <input type="submit" class="right" value="Edit" />
+                    <a class="right" href="/Products/Index">Back</a>
+                </div>
+            </div>
+        </div>
+    </form>
+</fieldset>
+
+

@@ -1,0 +1,71 @@
+﻿@model Sales.ViewModels.Products.AddToCartVM;
+@{
+    this.Layout = "/Views/Shared/_Site.cshtml";
+    ViewData["title"] = "Add Product To Cart";
+}
+
+<fieldset>
+    <legend>Add Product To Cart</legend>
+    <form action="/Products/AddToCart" method="post">
+        <div class="grid">
+            @Html.HiddenFor(m=>m.Id)
+            <div class="row">
+                <div class="col-1">@Html.LabelFor(m=>m.Name)</div>
+                <div class="col-2">
+                    @Html.DisplayFor(m=>m.Name, Model.Name)
+                    @Html.HiddenFor(m=>m.Name)
+                </div>
+                <div class="col-2"></div>
+            </div>
+            <div class="row">
+                <div class="col-1">@Html.LabelFor(m=>m.Description)</div>
+                <div class="col-2">
+                    @Html.DisplayFor(m=>m.Description, Model.Description)
+                    @Html.HiddenFor(m=>m.Description)
+                </div>
+                <div class="col-2"></div>
+            </div>
+            <div class="row">
+                <div class="col-1">@Html.LabelFor(m=>m.Quantity)</div>
+                <div class="col-2">
+                    @Html.DisplayFor(m=>m.Quantity, Model.Quantity)
+                    @Html.HiddenFor(m=>m.Quantity)
+                </div>
+                <div class="col-2"></div>
+            </div>
+            <div class="row">
+                <div class="col-1">@Html.LabelFor(m=>m.PricePerUnit)</div>
+                <div class="col-2">
+                    @Html.DisplayFor(m=>m.PricePerUnit, Model.PricePerUnit)
+                    @Html.HiddenFor(m=>m.PricePerUnit)
+                </div>
+                <div class="col-2"></div>
+            </div>
+            <div class="row">
+                <div class="col-1">@Html.LabelFor(m=>m.Units)</div>
+                <div class="col-2">
+                    @Html.TextBoxFor(m=>m.Units)
+                </div>
+                <div class="col-2">
+                    @Html.ValidationMessageFor(m=>m.Units)
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1"></div>
+                    <div class="col-2">
+                        @Html.ValidationMessage("amountError", new {@style ="error right" })
+                    </div>
+            </div>
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-2">
+                    <input type="submit" class="right" value="Add to cart" />
+                    <a class="right" href="/Products/ShoppingIndex">Back</a>
+                </div>
+            </div>
+        </div>
+    </form>
+</fieldset>
+
+
+

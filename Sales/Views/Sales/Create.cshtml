@@ -1,0 +1,60 @@
+﻿@model Sales.ViewModels.Sales.CreateVM;
+@using Sales.ViewModels.Products;
+@{
+    this.Layout = "/Views/Shared/_Site.cshtml";
+    ViewData["title"] = "Create Sale";
+}
+
+<fieldset>
+    <legend>Create sale</legend>
+    <form action="/Sales/Create" method="post">
+        <div class="grid">
+            <div class="row">
+                <div class="col-1">Name:</div>
+                <div class="col-2">PricePerUnit:</div>
+                <div class="col-2">Amount:</div>
+                <div class="col-1">Total Price:</div>
+            </div>
+            @Html.HiddenFor(m=>m.SaleProducts)
+            @foreach (AddToCartVM productSale in Model.SaleProducts)
+            {
+                        <div class="row">
+                            <div class="col-1">@productSale.Name</div>
+                            <div class="col-2">@productSale.PricePerUnit</div>
+                            <div class="col-2">@productSale.Units</div>
+                            <div class="col-2">@(productSale.Units * productSale.PricePerUnit)</div>
+                    <div class="col-2"><a class="right" href="/Products/RemoveFromCart?Id=@productSale.Id">Remove</a></div>
+                        </div>
+            }
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-2"></div>
+                <div class="col-2"></div>
+                <div class="col-1">@Model.TotalPrice</div>
+            </div>
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-2"></div>
+                <div class="col-2"></div>
+                <div class="col-1">
+                    @Html.ValidationMessage("noProductsError", new {@style ="error right" })
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-2"></div>
+                <div class="col-2"></div>
+                <div class="col-1">
+                    <input type="submit" class="right" value="Create" />
+                    <a class="right" href="/Sales/Index">Back</a>
+                </div>
+                <div class="col-1">
+                    <a class="right" href="/Products/ClearCart">Clear cart</a>
+                </div>
+            </div>
+        </div>
+    </form>
+</fieldset>
+
+
+

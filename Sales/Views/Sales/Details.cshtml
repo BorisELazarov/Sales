@@ -1,0 +1,44 @@
+﻿@model Sales.ViewModels.Sales.DetailsVM;
+@using Sales.ViewModels.Sales;
+@{
+    this.Layout = "/Views/Shared/_Site.cshtml";
+    ViewData["title"] = "Details Of Sale";
+}
+<h2>Details:</h2>
+<div class="grid">
+    <div class="row">
+        <div class="col-2">@Html.LabelFor(m=>m.Date) @(Model.Date.ToShortDateString())</div>
+        <div class="col-2">@Html.LabelFor(m=>m.Status) @Html.DisplayFor(m=>m.Status)</div>
+    </div>
+    <div class="row">
+        <div class="col-1">Name</div>
+        <div class="col-2">PricePerUnit</div>
+        <div class="col-2">Amount</div>
+        <div class="col-1">Total Price</div>
+    </div>
+    @foreach (ItemVM productSale in Model.SaleProducts)
+    {
+        <div class="row">
+            <div class="col-1">@productSale.Name</div>
+            <div class="col-2">@productSale.PricePerUnit</div>
+            <div class="col-2">@productSale.Quantity</div>
+            <div class="col-2">@(productSale.Quantity * productSale.PricePerUnit)</div>
+        </div>
+    }
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="col-2"></div>
+        <div class="col-2"></div>
+        <div class="col-1">@Model.TotalPrice</div>
+    </div>
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="col-2"></div>
+        <div class="col-2"></div>
+        <div class="col-1">
+            <a href="/Sales/Cancel?Id=@Model.Id"
+               onclick="return confirm('Cancel sale?');">Cancel</a>
+            <a class="right" href="/Sales/Index">Back</a>
+        </div>
+    </div>
+</div>

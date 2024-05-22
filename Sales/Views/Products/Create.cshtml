@@ -1,0 +1,58 @@
+﻿@model Sales.ViewModels.Products.CreateVM;
+@{
+    this.Layout = "/Views/Shared/_Site.cshtml";
+    ViewData["title"] = "Create Product";
+}
+
+<fieldset>
+    <legend>Create employee</legend>
+    <form action="/Products/Create" method="post">
+        <div class="grid">
+            <div class="row">
+                <div class="col-1">@Html.LabelFor(m=>m.Name)</div>
+                <div class="col-2">
+                    @Html.TextBoxFor(m=>m.Name)
+                </div>
+                <div class="col-2">
+                    @Html.ValidationMessageFor(m=>m.Name)
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">@Html.LabelFor(m=>m.Description)</div>
+                <div class="col-2">
+                    @Html.TextBoxFor(m=>m.Description)
+                </div>
+                <div class="col-2">
+                    @Html.ValidationMessageFor(m=>m.Description)
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">@Html.LabelFor(m=>m.Quantity)</div>
+                <div class="col-2">
+                    @Html.TextBoxFor(m=>m.Quantity)
+                </div>
+                <div class="col-2">
+                    @Html.ValidationMessageFor(m=>m.Quantity)
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">@Html.LabelFor(m=>m.PricePerUnit)</div>
+                <div class="col-2">
+                    @Html.TextBoxFor(m=>m.PricePerUnit)
+                </div>
+                <div class="col-2">
+                    @Html.ValidationMessageFor(m=>m.PricePerUnit)
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-2">
+                    <input type="submit" class="right" value="Create" />
+                    <a class="right" href="/Products/Index">Back</a>
+                </div>
+            </div>
+        </div>
+    </form>
+</fieldset>
+
+

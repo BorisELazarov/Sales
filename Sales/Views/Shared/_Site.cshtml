@@ -1,0 +1,55 @@
+﻿@using Sales.Entities;
+@using Sales.ExtensionMethods;
+@{
+    User loggedUser = this.ViewContext.HttpContext.Session.GetObject<User>("loggedUser");
+}
+<html>
+<head>
+    <title>@ViewData["title"]</title>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+</head>
+<body>
+    <div class="container header">
+        <h1 class="title">Sales</h1>
+        <div class="welcomeMsg right">
+            <span>Hello,
+                @(loggedUser==null ? "Anonymous" : loggedUser.Username)</span>
+        </div>
+    </div>
+    <hr>
+    <div class="container">
+        <ul class="menu">
+            <li><a href="/Home/Index">Home</a></li>
+            @if (loggedUser != null)
+            {
+                if (loggedUser.IsEmployee)
+                {
+                    <li><a href="/Users/Index">Users</a></li>
+                    <li><a href="/Products/Index">Products</a></li>
+                    <li><a href="/Sales/PendingIndex">Pending Sales</a></li>
+                }
+                else
+                {
+                    <li><a href="/Sales/Index">Sales</a></li>
+                    <li><a href="/Products/ShoppingIndex">Products</a></li>
+                }
+
+                <li><a href="/Home/Logout">Log Out</a></li>
+            }
+            else
+            {
+                <li><a href="/Home/Login">Login</a></li>
+                <li><a href="/Home/Register">Register</a></li>
+            }
+        </ul>
+        @if (loggedUser != null && !loggedUser.IsEmployee)
+        {
+            <button class="right align-content-center" onclick="location.href='/Sales/Create';">Cart</button>
+        }
+    </div>
+    <hr>
+    <div class="container">
+        @RenderBody()
+    </div>
+</body>
+</html>

@@ -1,0 +1,87 @@
+﻿@model Sales.ViewModels.Sales.IndexVM
+@using Sales.Entities;
+@using Sales.Enums;
+@{
+    this.Layout = "/Views/Shared/_Site.cshtml";
+    ViewData["title"] = "Sales";
+    string controller = this.ViewContext.RouteData.Values["controller"].ToString();
+    string action = this.ViewContext.RouteData.Values["action"].ToString();
+}
+<form action="/@controller/@action" method="get">
+    @Html.HiddenFor(m=>m.Pager.ItemsPerPage)
+    <div class="grid">
+        <div class="row">
+            <div class="col-1">@Html.LabelFor(m=>m.Filter.Status)</div>
+            <div class="col-1">@Html.DropDownListFor(m=>m.Filter.Status,
+                new SelectList(
+                    new List<Status>{
+                    Status.Pending,
+                    Status.Approved,
+                    Status.Cancelled
+                    }
+                )
+            )</div>
+        </div>
+        <div class="row">
+            <div class="col-1">@Html.LabelFor(m=>m.Filter.Date)</div>
+            <div class="col-1">@Html.EditorFor(m=>m.Filter.Date,
+                new {htmlAttributes = new { @class = "form-control", type = "date" } }
+            )</div>
+        </div>
+        <div class="row">
+            <div class="col-3">
+                <input class="right" type="submit" value="Filter" />
+                <a class="right" href="/@controller/@action">Clear</a>
+            </div>
+        </div>
+    </div>
+</form>
+
+<a href="/@controller/Create">Create Sale</a>
+<div class="grid">
+    <div class="row">
+        <div class="col-1">Number</div>
+        <div class="col-2">Status</div>
+        <div class="col-2">Date and time</div>
+        <div class="col-2"></div>
+    </div>
+    @foreach (Sale sale in Model.Items)
+    {
+        <div class="row">
+            <div class="col-1">#@(@Model.Items.IndexOf(sale)+1)</div>
+            <div class="col-2">@sale.Status.ToString()</div>
+            <div class="col-2">@(sale.Date.ToShortDateString())</div>
+            <div class="col-2">
+                <a href="/Sales/Details?Id=@sale.Id">Details</a>
+                <a href="/Sales/Cancel?Id=@sale.Id"
+               onclick="return confirm('Cancel sale?');">Cancel</a>
+            </div>
+        </div>
+    }
+    <div class="row pager">
+        <div class="col-3">
+            @for (int i = 0; i < Model.Pager.PagesCount; i++)
+            {
+                <a href="/@controller/@action?Pager.Page=@(i+1)&Pager.ItemsPerPage=@Model.Pager.ItemsPerPage
+                             &Filter.Status=@Model.Filter.Status&Filter.FirstName=@Model.Filter.Date">
+                    @(i + 1)
+                </a>
+            }
+
+            <script>
+                function ddlItemsPerPage_OnChange() {
+                    let control = document.getElementById("ddlItemsPerPage");
+
+                    document.location.href = "/@controller/@action?Pager.ItemsPerPage=" + control.value
+                        + "&Filter.Username=@Model.Filter.Status"
+                        + "&Filter.LastName=@Model.Filter.Date";
+                }
+            </script>
+            <select id="ddlItemsPerPage" onchange="ddlItemsPerPage_OnChange">
+                <option value="3" @(Model.Pager.ItemsPerPage==3 ? "selected" : "")>3</option>
+                <option value="5" @(Model.Pager.ItemsPerPage==5 ? "selected" : "")>5</option>
+                <option value="10" @(Model.Pager.ItemsPerPage==10 ? "selected" : "")>10</option>
+            </select>
+        </div>
+    </div>
+</div>

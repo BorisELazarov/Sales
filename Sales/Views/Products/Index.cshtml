@@ -1,0 +1,81 @@
+﻿@model Sales.ViewModels.Products.IndexVM
+@using Sales.Entities;
+@{
+    this.Layout = "/Views/Shared/_Site.cshtml";
+    ViewData["title"] = "Products";
+    string controller = this.ViewContext.RouteData.Values["controller"].ToString();
+    string action = this.ViewContext.RouteData.Values["action"].ToString();
+}
+<form action="/@controller/@action" method="get">
+    @Html.HiddenFor(m=>m.Pager.ItemsPerPage)
+    <div class="grid">
+        <div class="row">
+            <div class="col-1">@Html.LabelFor(m=>m.Filter.Name)</div>
+            <div class="col-1">@Html.TextBoxFor(m=>m.Filter.Name)</div>
+        </div>
+        <div class="row">
+            <div class="col-1">@Html.LabelFor(m=>m.Filter.Quantity)</div>
+            <div class="col-1">@Html.TextBoxFor(m=>m.Filter.Quantity)</div>
+        </div>
+        <div class="row">
+            <div class="col-1">@Html.LabelFor(m=>m.Filter.PricePerUnit)</div>
+            <div class="col-1">@Html.TextBoxFor(m=>m.Filter.PricePerUnit)</div>
+        </div>
+        <div class="row">
+            <div class="col-3">
+                <input class="right" type="submit" value="Filter" />
+                <a class="right" href="/@controller/@action">Clear</a>
+            </div>
+        </div>
+    </div>
+</form>
+
+<a href="/@controller/Create">Create Product</a>
+<div class="grid">
+    <div class="row">
+        <div class="col-1">Name</div>
+        <div class="col-2">Quantity</div>
+        <div class="col-2">Price per Unit</div>
+        <div class="col-2"></div>
+    </div>
+    @foreach (Product product in Model.Items)
+    {
+        <div class="row">
+            <div class="col-1">@product.Name</div>
+            <div class="col-2">@product.Quantity</div>
+            <div class="col-2">@product.PricePerUnit</div>
+            <div class="col-2">
+                <a href="/Products/Edit?Id=@product.Id">edit</a>
+                <a href="/Products/Delete?Id=@product.Id"
+               onclick="return confirm('Delete Record?');">delete</a>
+            </div>
+        </div>
+    }
+    <div class="row pager">
+        <div class="col-3">
+            @for (int i = 0; i < Model.Pager.PagesCount; i++)
+            {
+                <a href="/@controller/@action?Pager.Page=@(i+1)&Pager.ItemsPerPage=@Model.Pager.ItemsPerPage
+                             &Filter.Name=@Model.Filter.Name&Filter.Quantity=@Model.Filter.Quantity
+                             &Filter.PricePerUnit=@Model.Filter.PricePerUnit">
+                    @(i + 1)
+                </a>
+            }
+
+            <script>
+                function ddlItemsPerPage_OnChange() {
+                    let control = document.getElementById("ddlItemsPerPage");
+
+                    document.location.href = "/@controller/@action?Pager.ItemsPerPage=" + control.value
+                        + "&Filter.Name=@Model.Filter.Name&Filter.Quantity=@Model.Filter.Quantity"
+                        + "&Filter.PricePerUnit=@Model.Filter.PricePerUnit";
+                }
+            </script>
+            <select id="ddlItemsPerPage" onchange="ddlItemsPerPage_OnChange()">
+                <option value="3" @(Model.Pager.ItemsPerPage==3 ? "selected" : "")>3</option>
+                <option value="5" @(Model.Pager.ItemsPerPage==5 ? "selected" : "")>5</option>
+                <option value="10" @(Model.Pager.ItemsPerPage==10 ? "selected" : "")>10</option>
+            </select>
+        </div>
+    </div>
+</div>

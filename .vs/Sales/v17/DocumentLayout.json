@@ -1,0 +1,303 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Programming\\MVCTraining\\Sales\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{AA7C02AF-4BDF-43E4-A9A1-8B01C3AACA51}|Sales\\Sales.csproj|d:\\programming\\mvctraining\\sales\\sales\\views\\users\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AA7C02AF-4BDF-43E4-A9A1-8B01C3AACA51}|Sales\\Sales.csproj|solutionrelative:sales\\views\\users\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA7C02AF-4BDF-43E4-A9A1-8B01C3AACA51}|Sales\\Sales.csproj|d:\\programming\\mvctraining\\sales\\sales\\views\\sales\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AA7C02AF-4BDF-43E4-A9A1-8B01C3AACA51}|Sales\\Sales.csproj|solutionrelative:sales\\views\\sales\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA7C02AF-4BDF-43E4-A9A1-8B01C3AACA51}|Sales\\Sales.csproj|d:\\programming\\mvctraining\\sales\\sales\\views\\sales\\pendingindex.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AA7C02AF-4BDF-43E4-A9A1-8B01C3AACA51}|Sales\\Sales.csproj|solutionrelative:sales\\views\\sales\\pendingindex.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA7C02AF-4BDF-43E4-A9A1-8B01C3AACA51}|Sales\\Sales.csproj|d:\\programming\\mvctraining\\sales\\sales\\views\\products\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AA7C02AF-4BDF-43E4-A9A1-8B01C3AACA51}|Sales\\Sales.csproj|solutionrelative:sales\\views\\products\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA7C02AF-4BDF-43E4-A9A1-8B01C3AACA51}|Sales\\Sales.csproj|D:\\Programming\\MVCTraining\\Sales\\sales\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA7C02AF-4BDF-43E4-A9A1-8B01C3AACA51}|Sales\\Sales.csproj|solutionrelative:sales\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA7C02AF-4BDF-43E4-A9A1-8B01C3AACA51}|Sales\\Sales.csproj|d:\\programming\\mvctraining\\sales\\sales\\repositories\\baserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA7C02AF-4BDF-43E4-A9A1-8B01C3AACA51}|Sales\\Sales.csproj|solutionrelative:sales\\repositories\\baserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA7C02AF-4BDF-43E4-A9A1-8B01C3AACA51}|Sales\\Sales.csproj|D:\\Programming\\MVCTraining\\Sales\\sales\\extensionmethods\\sessionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA7C02AF-4BDF-43E4-A9A1-8B01C3AACA51}|Sales\\Sales.csproj|solutionrelative:sales\\extensionmethods\\sessionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA7C02AF-4BDF-43E4-A9A1-8B01C3AACA51}|Sales\\Sales.csproj|D:\\Programming\\MVCTraining\\Sales\\sales\\controllers\\salescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA7C02AF-4BDF-43E4-A9A1-8B01C3AACA51}|Sales\\Sales.csproj|solutionrelative:sales\\controllers\\salescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA7C02AF-4BDF-43E4-A9A1-8B01C3AACA51}|Sales\\Sales.csproj|D:\\Programming\\MVCTraining\\Sales\\sales\\repositories\\salesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA7C02AF-4BDF-43E4-A9A1-8B01C3AACA51}|Sales\\Sales.csproj|solutionrelative:sales\\repositories\\salesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA7C02AF-4BDF-43E4-A9A1-8B01C3AACA51}|Sales\\Sales.csproj|D:\\Programming\\MVCTraining\\Sales\\sales\\repositories\\usersrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA7C02AF-4BDF-43E4-A9A1-8B01C3AACA51}|Sales\\Sales.csproj|solutionrelative:sales\\repositories\\usersrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA7C02AF-4BDF-43E4-A9A1-8B01C3AACA51}|Sales\\Sales.csproj|D:\\Programming\\MVCTraining\\Sales\\sales\\entities\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA7C02AF-4BDF-43E4-A9A1-8B01C3AACA51}|Sales\\Sales.csproj|solutionrelative:sales\\entities\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA7C02AF-4BDF-43E4-A9A1-8B01C3AACA51}|Sales\\Sales.csproj|D:\\Programming\\MVCTraining\\Sales\\sales\\entities\\saleproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA7C02AF-4BDF-43E4-A9A1-8B01C3AACA51}|Sales\\Sales.csproj|solutionrelative:sales\\entities\\saleproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA7C02AF-4BDF-43E4-A9A1-8B01C3AACA51}|Sales\\Sales.csproj|D:\\Programming\\MVCTraining\\Sales\\sales\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA7C02AF-4BDF-43E4-A9A1-8B01C3AACA51}|Sales\\Sales.csproj|solutionrelative:sales\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA7C02AF-4BDF-43E4-A9A1-8B01C3AACA51}|Sales\\Sales.csproj|D:\\Programming\\MVCTraining\\Sales\\sales\\migrations\\20240304081834_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA7C02AF-4BDF-43E4-A9A1-8B01C3AACA51}|Sales\\Sales.csproj|solutionrelative:sales\\migrations\\20240304081834_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA7C02AF-4BDF-43E4-A9A1-8B01C3AACA51}|Sales\\Sales.csproj|D:\\Programming\\MVCTraining\\Sales\\sales\\migrations\\20240417100541_isemployeecolumnadded.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA7C02AF-4BDF-43E4-A9A1-8B01C3AACA51}|Sales\\Sales.csproj|solutionrelative:sales\\migrations\\20240417100541_isemployeecolumnadded.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA7C02AF-4BDF-43E4-A9A1-8B01C3AACA51}|Sales\\Sales.csproj|D:\\Programming\\MVCTraining\\Sales\\sales\\views\\products\\shoppingindex.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AA7C02AF-4BDF-43E4-A9A1-8B01C3AACA51}|Sales\\Sales.csproj|solutionrelative:sales\\views\\products\\shoppingindex.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA7C02AF-4BDF-43E4-A9A1-8B01C3AACA51}|Sales\\Sales.csproj|D:\\Programming\\MVCTraining\\Sales\\sales\\views\\products\\addtocart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AA7C02AF-4BDF-43E4-A9A1-8B01C3AACA51}|Sales\\Sales.csproj|solutionrelative:sales\\views\\products\\addtocart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 153,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PendingIndex.cshtml",
+              "DocumentMoniker": "D:\\Programming\\MVCTraining\\Sales\\Sales\\Views\\Sales\\PendingIndex.cshtml",
+              "RelativeDocumentMoniker": "Sales\\Views\\Sales\\PendingIndex.cshtml",
+              "ToolTip": "D:\\Programming\\MVCTraining\\Sales\\Sales\\Views\\Sales\\PendingIndex.cshtml",
+              "RelativeToolTip": "Sales\\Views\\Sales\\PendingIndex.cshtml",
+              "ViewState": "AQIAADwAAAAAAAAAAAAAAEcAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-22T18:32:37.187Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Programming\\MVCTraining\\Sales\\Sales\\Views\\Sales\\Index.cshtml",
+              "RelativeDocumentMoniker": "Sales\\Views\\Sales\\Index.cshtml",
+              "ToolTip": "D:\\Programming\\MVCTraining\\Sales\\Sales\\Views\\Sales\\Index.cshtml",
+              "RelativeToolTip": "Sales\\Views\\Sales\\Index.cshtml",
+              "ViewState": "AQIAAD8AAAAAAAAAAAAAAEsAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-22T18:32:30.604Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Programming\\MVCTraining\\Sales\\Sales\\Views\\Users\\Index.cshtml",
+              "RelativeDocumentMoniker": "Sales\\Views\\Users\\Index.cshtml",
+              "ToolTip": "D:\\Programming\\MVCTraining\\Sales\\Sales\\Views\\Users\\Index.cshtml",
+              "RelativeToolTip": "Sales\\Views\\Users\\Index.cshtml",
+              "ViewState": "AQIAADwAAAAAAAAAAAAAAEUAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-22T18:32:16.745Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "BaseRepository.cs",
+              "DocumentMoniker": "D:\\Programming\\MVCTraining\\Sales\\Sales\\Repositories\\BaseRepository.cs",
+              "RelativeDocumentMoniker": "Sales\\Repositories\\BaseRepository.cs",
+              "ToolTip": "D:\\Programming\\MVCTraining\\Sales\\Sales\\Repositories\\BaseRepository.cs",
+              "RelativeToolTip": "Sales\\Repositories\\BaseRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-22T17:08:00.124Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Programming\\MVCTraining\\Sales\\Sales\\Views\\Products\\Index.cshtml",
+              "RelativeDocumentMoniker": "Sales\\Views\\Products\\Index.cshtml",
+              "ToolTip": "D:\\Programming\\MVCTraining\\Sales\\Sales\\Views\\Products\\Index.cshtml",
+              "RelativeToolTip": "Sales\\Views\\Products\\Index.cshtml",
+              "ViewState": "AQIAADMAAAAAAAAAAAAAAEkAAABNAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-22T13:40:40.03Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ProductsController.cs",
+              "DocumentMoniker": "D:\\Programming\\MVCTraining\\Sales\\Sales\\Controllers\\ProductsController.cs",
+              "RelativeDocumentMoniker": "Sales\\Controllers\\ProductsController.cs",
+              "ToolTip": "D:\\Programming\\MVCTraining\\Sales\\Sales\\Controllers\\ProductsController.cs",
+              "RelativeToolTip": "Sales\\Controllers\\ProductsController.cs",
+              "ViewState": "AQIAAC8AAAAAAAAAAAAwwDMAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-23T13:27:16.92Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "SalesController.cs",
+              "DocumentMoniker": "D:\\Programming\\MVCTraining\\Sales\\Sales\\Controllers\\SalesController.cs",
+              "RelativeDocumentMoniker": "Sales\\Controllers\\SalesController.cs",
+              "ToolTip": "D:\\Programming\\MVCTraining\\Sales\\Sales\\Controllers\\SalesController.cs",
+              "RelativeToolTip": "Sales\\Controllers\\SalesController.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAJEAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-17T16:34:30.134Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "SessionExtensions.cs",
+              "DocumentMoniker": "D:\\Programming\\MVCTraining\\Sales\\Sales\\ExtensionMethods\\SessionExtensions.cs",
+              "RelativeDocumentMoniker": "Sales\\ExtensionMethods\\SessionExtensions.cs",
+              "ToolTip": "D:\\Programming\\MVCTraining\\Sales\\Sales\\ExtensionMethods\\SessionExtensions.cs",
+              "RelativeToolTip": "Sales\\ExtensionMethods\\SessionExtensions.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAgwBAAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T13:47:04.439Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "SalesRepository.cs",
+              "DocumentMoniker": "D:\\Programming\\MVCTraining\\Sales\\Sales\\Repositories\\SalesRepository.cs",
+              "RelativeDocumentMoniker": "Sales\\Repositories\\SalesRepository.cs",
+              "ToolTip": "D:\\Programming\\MVCTraining\\Sales\\Sales\\Repositories\\SalesRepository.cs",
+              "RelativeToolTip": "Sales\\Repositories\\SalesRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-19T10:13:42.002Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "UsersRepository.cs",
+              "DocumentMoniker": "D:\\Programming\\MVCTraining\\Sales\\Sales\\Repositories\\UsersRepository.cs",
+              "RelativeDocumentMoniker": "Sales\\Repositories\\UsersRepository.cs",
+              "ToolTip": "D:\\Programming\\MVCTraining\\Sales\\Sales\\Repositories\\UsersRepository.cs",
+              "RelativeToolTip": "Sales\\Repositories\\UsersRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-18T07:05:54.628Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "SaleProduct.cs",
+              "DocumentMoniker": "D:\\Programming\\MVCTraining\\Sales\\Sales\\Entities\\SaleProduct.cs",
+              "RelativeDocumentMoniker": "Sales\\Entities\\SaleProduct.cs",
+              "ToolTip": "D:\\Programming\\MVCTraining\\Sales\\Sales\\Entities\\SaleProduct.cs",
+              "RelativeToolTip": "Sales\\Entities\\SaleProduct.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T15:53:34.857Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\Programming\\MVCTraining\\Sales\\Sales\\Entities\\User.cs",
+              "RelativeDocumentMoniker": "Sales\\Entities\\User.cs",
+              "ToolTip": "D:\\Programming\\MVCTraining\\Sales\\Sales\\Entities\\User.cs",
+              "RelativeToolTip": "Sales\\Entities\\User.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T15:05:50.262Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Product.cs",
+              "DocumentMoniker": "D:\\Programming\\MVCTraining\\Sales\\Sales\\Entities\\Product.cs",
+              "RelativeDocumentMoniker": "Sales\\Entities\\Product.cs",
+              "ToolTip": "D:\\Programming\\MVCTraining\\Sales\\Sales\\Entities\\Product.cs",
+              "RelativeToolTip": "Sales\\Entities\\Product.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T15:53:36.41Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "20240304081834_Initial.cs",
+              "DocumentMoniker": "D:\\Programming\\MVCTraining\\Sales\\Sales\\Migrations\\20240304081834_Initial.cs",
+              "RelativeDocumentMoniker": "Sales\\Migrations\\20240304081834_Initial.cs",
+              "ToolTip": "D:\\Programming\\MVCTraining\\Sales\\Sales\\Migrations\\20240304081834_Initial.cs",
+              "RelativeToolTip": "Sales\\Migrations\\20240304081834_Initial.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T15:10:11.902Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "20240417100541_IsEmployeeColumnAdded.cs",
+              "DocumentMoniker": "D:\\Programming\\MVCTraining\\Sales\\Sales\\Migrations\\20240417100541_IsEmployeeColumnAdded.cs",
+              "RelativeDocumentMoniker": "Sales\\Migrations\\20240417100541_IsEmployeeColumnAdded.cs",
+              "ToolTip": "D:\\Programming\\MVCTraining\\Sales\\Sales\\Migrations\\20240417100541_IsEmployeeColumnAdded.cs",
+              "RelativeToolTip": "Sales\\Migrations\\20240417100541_IsEmployeeColumnAdded.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T15:10:17.455Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ShoppingIndex.cshtml",
+              "DocumentMoniker": "D:\\Programming\\MVCTraining\\Sales\\Sales\\Views\\Products\\ShoppingIndex.cshtml",
+              "RelativeDocumentMoniker": "Sales\\Views\\Products\\ShoppingIndex.cshtml",
+              "ToolTip": "D:\\Programming\\MVCTraining\\Sales\\Sales\\Views\\Products\\ShoppingIndex.cshtml",
+              "RelativeToolTip": "Sales\\Views\\Products\\ShoppingIndex.cshtml",
+              "ViewState": "AQIAABgAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-28T11:29:40.495Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "AddToCart.cshtml",
+              "DocumentMoniker": "D:\\Programming\\MVCTraining\\Sales\\Sales\\Views\\Products\\AddToCart.cshtml",
+              "RelativeDocumentMoniker": "Sales\\Views\\Products\\AddToCart.cshtml",
+              "ToolTip": "D:\\Programming\\MVCTraining\\Sales\\Sales\\Views\\Products\\AddToCart.cshtml",
+              "RelativeToolTip": "Sales\\Views\\Products\\AddToCart.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACYAAABLAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-23T15:02:20.059Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
